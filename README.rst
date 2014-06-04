@@ -16,7 +16,7 @@ Alternatively, you can clone this repository and build the image yourself:
 
 .. code-block:: bash
 
-    $ docker build -t=docker-mongodb .
+    $ docker build -t=swcc/docker-mongodb .
 
 Using this image
 ----------------
@@ -25,7 +25,7 @@ After building/retrieving the Docker container:
 .. code-block:: bash
 
     # Run the docker container
-    docker run -p 27017:27017 -name mongodb -d docker-mongodb /sbin/my_init --enable-insecure-key # Give container a name in case it's linked to another app container
+    docker run -p 27017:27017 -name mongodb -d swcc/docker-mongodb /sbin/my_init --enable-insecure-key # Give container a name in case it's linked to another app container
 
 
 * `docker run` - starts a new docker container
