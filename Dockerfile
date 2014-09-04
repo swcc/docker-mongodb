@@ -2,7 +2,7 @@
 # https://github.com/atbaker/spin-docker | http://www.mongodb.org/
 
 # Use phusion/baseimage as base image
-FROM phusion/baseimage:0.9.10
+FROM phusion/baseimage:latest
 
 MAINTAINER Andrew T. Baker <andrew@andrewtorkbaker.com>
 
