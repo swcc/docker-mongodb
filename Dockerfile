@@ -19,7 +19,7 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mongodb-org
 RUN mkdir -p /data/db
 RUN chown -R mongodb:mongodb /data
-RUN echo "bind_ip = 0.0.0.0" >> /etc/mongodb.conf
+RUN echo "bind_ip = 0.0.0.0" >> /etc/mongod.conf
 
 # Create a runit entry for your app
 RUN mkdir /etc/service/mongo
