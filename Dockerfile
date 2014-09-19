@@ -16,7 +16,7 @@ RUN echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
 
 # Install MongoDB
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mongodb-10gen
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mongodb-org
 RUN mkdir -p /data/db
 RUN chown -R mongodb:mongodb /data
 RUN echo "bind_ip = 0.0.0.0" >> /etc/mongodb.conf
